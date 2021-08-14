@@ -3,120 +3,176 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
-
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 h1 {
   text-align: center;
+  font-size: 175%;
+  margin-bottom: 50px;
 }
-
 
 p.titulo { 
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  
+  font-size: 125%;
 }
+
 p.texto {
-  padding-left: 10px;
+  margin-left: 5%;
+  margin-top: 90px;
+  margin-right: 5%;
+  text-justify: auto;
 }
+
+span.meat {
+  font-weight: bold;
+  color:maroon
+}
+span.fish {
+  font-weight: bold;
+  color:darkblue
+}
+
+span.salad {
+  font-weight: bold;
+  color: green;
+}
+
 
 .container {
-  border: 1px solid red;
+  
   overflow-x: hidden;
-  padding: 10px 10px 10px 10px;
   position: relative;
-  margin: 20px 100px 20px 100px;
+   margin-left: 10%;
+
 }
 
-.micajita {
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
+.Cajacontenedora {
+  border: 5px solid black;
+  border-width: 1px;
+  float: left;
+  width: 28%;
+  margin: 20px;
   position: relative;
+  background-color: pink;
   
 }
-.cajatexto {
 
-  border: 5px solid red;
+.cajatitulo {
+
+  border: 5px solid black;  
+  border-width: 1px;
   position: absolute;
+  right: 0;
   top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;  
-}
-
-
-
-
-/********** Large devices only **********/
-@media (min-width: 992px) {
-  .col-lg-1 {
-    float: left;
-    width: 28%;
-    margin: 20px;
-    
-  }
-
-  .cajatitulo {
-
-    border: 5px solid red;  
-    position: relative;
-    float: right;
-    margin: 0px 0px 40px 100px;
-    width: 30%;
-    
-      }
-        
- 
+  width: 30%;
+  height: auto;
   
+    
+    }
+      
+#beef {
+  background-color: maroon;
+  color: white; 
 }
 
+#fish {
+  background-color: aqua;
+  color: darkblue;
+}
+
+#salad {
+  background-color: lightgreen;
+  color: darkgreen;
+}
+
+ 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1 {
+
+  .Cajacontenedora {
+    border: 5px solid black;
+    border-width: 1px;
     float: left;
-    width: 40%;
-    margin: 15px;
-  }
-  .col-md-2 {
-    float: left;
-    width: 95%;
-    margin: 15px;
-  }
-
-
-  .cajatitulo {
-
-    border: 5px solid red;  
+    width: 30%;
+    margin: 55px;
     position: relative;
-    float: right;
-    margin: 0px 0px 60px 0px;
-    width: 100px;
+    background-color: pink;
     
-      }
+  }
+
+  .cajamedia {
+
+    border: 5px solid black;
+    border-width: 1px;
+    float: left;
+    width: 90%;
+    margin: 30px;
+    position: relative;
+    background-color: pink;  
+
+  }
   
+  .cajatitulo {
+  
+    border: 5px solid black;  
+    border-width: 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: auto;    
+      
+      }
+
+  .cajatitulomedia {
+  
+    border: 5px solid black;  
+    border-width: 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 38%;
+    
+      
+      }
 }
 
 /********** Small devices only **********/
 
 @media (max-width: 767px) {
-  .col-sm-1 {
+
+  .cajachiquita {
+
+    border: 5px solid black;
+    border-width: 1px;
     float: left;
-    width: 100%;
-    margin-bottom: 20px;
+    width: 90%;
+    position: relative;
+    background-color: pink;  
+
   }
 
   .cajatitulo {
 
-    border: 5px solid red;  
-    position: relative;
-    float: right;
-    margin: 0px 0px 60px 0px;
-    width: 100px;
+    border: 1px black;  
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    overflow: hidden;
+
     
       }
 
 
 }
   
+
+  
+ 
+  
+
 
